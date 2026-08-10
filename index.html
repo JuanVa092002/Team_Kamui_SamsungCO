@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Team Kamui — entrega del proyecto: informe técnico, código fuente, diapositivas y video de presentación."
+    />
+    <meta name="theme-color" content="#050505" />
+    <title>Team Kamui</title>
+
+    <link rel="icon" href="./Mangekyou_Sharingan_Kakashi29.webp" type="image/webp" />
+    <link rel="preload" href="./Mangekyou_Sharingan_Kakashi29.webp" as="image" type="image/webp" fetchpriority="high" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500;600;700;800&family=Figtree:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+
+    <header class="site-header" data-header>
+      <div class="site-header__progress" data-scroll-progress aria-hidden="true"></div>
+
+      <div class="site-header__inner">
+        <a class="brand" href="#home" aria-label="Team Kamui — inicio" data-nav-home>
+          <img
+            class="brand__mark"
+            src="./Mangekyou_Sharingan_Kakashi29.webp"
+            alt=""
+            width="32"
+            height="32"
+            decoding="async"
+          />
+          <span class="brand__logo" aria-hidden="true">
+            <span class="brand__syntax">&lt;</span><span class="brand__name">Team Kamui</span><span class="brand__syntax">/&gt;</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Entregables del proyecto">
+          <a class="nav__link" href="#informe-tecnico" data-nav-link data-nav-section="informe-tecnico">Informe técnico</a>
+          <a class="nav__link" href="#codigo-fuente" data-nav-link data-nav-section="codigo-fuente">Código fuente</a>
+          <a class="nav__link" href="#diapositivas" data-nav-link data-nav-section="diapositivas">Diapositivas</a>
+          <a class="nav__link" href="#video-presentacion" data-nav-link data-nav-section="video-presentacion">Video presentación</a>
+          <a class="nav__link" href="#integrantes" data-nav-link data-nav-section="integrantes">Integrantes</a>
+        </nav>
+
+        <div class="site-header__actions">
+          <a
+            class="cta-pill"
+            href="https://capstone-auditor-medico.vercel.app/home"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-analytics="cta_live_system"
+          >Probar sistema en vivo</a>
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+            data-nav-toggle
+          >
+            <span class="nav-toggle__bar" aria-hidden="true"></span>
+            <span class="nav-toggle__bar" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+
+      <nav id="mobile-nav" class="nav-mobile" aria-label="Entregables del proyecto" hidden data-mobile-nav>
+        <a class="nav-mobile__link" href="#informe-tecnico" data-nav-link data-nav-section="informe-tecnico">Informe técnico</a>
+        <a class="nav-mobile__link" href="#codigo-fuente" data-nav-link data-nav-section="codigo-fuente">Código fuente</a>
+        <a class="nav-mobile__link" href="#diapositivas" data-nav-link data-nav-section="diapositivas">Diapositivas</a>
+        <a class="nav-mobile__link" href="#video-presentacion" data-nav-link data-nav-section="video-presentacion">Video presentación</a>
+        <a class="nav-mobile__link" href="#integrantes" data-nav-link data-nav-section="integrantes">Integrantes</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="home" class="hero" aria-label="Inicio">
+        <div class="hero__glow" aria-hidden="true"></div>
+        <div class="hero__grid">
+          <div class="hero__copy">
+            <p class="hero__brand">Team <span class="hero__brand-accent">Kamui</span></p>
+            <h1 class="hero__title">Entrega del proyecto</h1>
+            <p class="hero__lead">
+              Cuatro entregables listos para evaluación: informe, código, diapositivas y video.
+            </p>
+            <div class="hero__actions">
+              <a
+                class="btn btn--primary"
+                href="https://capstone-auditor-medico.vercel.app/home"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-analytics="cta_live_system"
+              >Probar sistema en vivo</a>
+              <a class="btn btn--ghost" href="#informe-tecnico">Ver entregables</a>
+            </div>
+          </div>
+
+          <div class="hero__visual" aria-hidden="true">
+            <div class="hero__ring"></div>
+            <img
+              class="hero__sharingan"
+              src="./Mangekyou_Sharingan_Kakashi29.webp"
+              alt=""
+              width="420"
+              height="420"
+              decoding="async"
+              fetchpriority="high"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Slots: reemplaza href="#" y quita aria-disabled cuando tengas el archivo/URL -->
+      <section id="informe-tecnico" class="deliverable" aria-labelledby="informe-tecnico-title" data-section>
+        <div class="deliverable__inner">
+          <p class="deliverable__index">01</p>
+          <div class="deliverable__body">
+            <h2 id="informe-tecnico-title" class="deliverable__title">Informe técnico</h2>
+            <p class="deliverable__text">Documento técnico del proyecto. Enlace o archivo pendiente.</p>
+          </div>
+          <a class="btn btn--primary deliverable__cta" href="#" aria-disabled="true">Próximamente</a>
+        </div>
+      </section>
+
+      <section id="codigo-fuente" class="deliverable" aria-labelledby="codigo-fuente-title" data-section>
+        <div class="deliverable__inner">
+          <p class="deliverable__index">02</p>
+          <div class="deliverable__body">
+            <h2 id="codigo-fuente-title" class="deliverable__title">Código fuente</h2>
+            <p class="deliverable__text">Repositorio o descarga del código. Enlace pendiente.</p>
+          </div>
+          <a class="btn btn--primary deliverable__cta" href="#" aria-disabled="true">Próximamente</a>
+        </div>
+      </section>
+
+      <section id="diapositivas" class="deliverable" aria-labelledby="diapositivas-title" data-section>
+        <div class="deliverable__inner">
+          <p class="deliverable__index">03</p>
+          <div class="deliverable__body">
+            <h2 id="diapositivas-title" class="deliverable__title">Diapositivas</h2>
+            <p class="deliverable__text">Presentación en diapositivas. Enlace o archivo pendiente.</p>
+          </div>
+          <a class="btn btn--primary deliverable__cta" href="#" aria-disabled="true">Próximamente</a>
+        </div>
+      </section>
+
+      <section id="video-presentacion" class="deliverable" aria-labelledby="video-presentacion-title" data-section>
+        <div class="deliverable__inner">
+          <p class="deliverable__index">04</p>
+          <div class="deliverable__body">
+            <h2 id="video-presentacion-title" class="deliverable__title">Video presentación</h2>
+            <p class="deliverable__text">Video de la presentación. Enlace o embed pendiente.</p>
+          </div>
+          <a class="btn btn--primary deliverable__cta" href="#" aria-disabled="true">Próximamente</a>
+        </div>
+      </section>
+
+      <section id="integrantes" class="team" aria-labelledby="integrantes-title" data-section>
+        <div class="team__header">
+          <p class="team__eyebrow">Team Kamui</p>
+          <h2 id="integrantes-title" class="team__title">Integrantes</h2>
+          <p class="team__lead">El equipo que diseñó, construyó y entregó el sistema.</p>
+        </div>
+
+        <div class="carousel" data-carousel>
+          <div class="carousel__frame">
+            <button class="carousel__btn carousel__btn--prev" type="button" aria-label="Integrante anterior" data-carousel-prev>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+
+            <div class="carousel__viewport" data-carousel-track tabindex="0" aria-label="Carrusel de integrantes">
+            <article class="member">
+              <div class="member__photo">
+                <img
+                  src="./team/juan-carlos.jpg"
+                  alt="Juan Carlos Pastas Valencia"
+                  width="400"
+                  height="400"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="member__body">
+                <h3 class="member__name">Juan Carlos Pastas Valencia</h3>
+                <p class="member__role">AI Product Engineer</p>
+              </div>
+              <div class="member__social">
+                <a class="member__social-link" href="#" aria-label="LinkedIn de Juan Carlos Pastas Valencia" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.94 6.5a1.94 1.94 0 1 1 0-3.88 1.94 1.94 0 0 1 0 3.88ZM4.75 8.75h4.38V20H4.75V8.75Zm7.06 0h4.2v1.54h.06c.58-1.1 2-2.26 4.12-2.26 4.4 0 5.21 2.9 5.21 6.67V20h-4.38v-5.2c0-1.24-.02-2.83-1.73-2.83-1.73 0-2 1.35-2 2.74V20h-4.38V8.75Z"/></svg>
+                </a>
+                <a class="member__social-link" href="#" aria-label="GitHub de Juan Carlos Pastas Valencia" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C6.48 2 2 6.58 2 12.25c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.73-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05a9.2 9.2 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.81 0 .27.18.6.69.49A10.03 10.03 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="member">
+              <div class="member__photo">
+                <img
+                  src="./team/santiago.png"
+                  alt="Santiago Palacio Vásquez"
+                  width="800"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="member__body">
+<h3 class="member__name">Santiago Palacio Vásquez</h3>
+              <p class="member__role">Software Engineer</p>
+</div>
+              <div class="member__social">
+                <a class="member__social-link" href="#" aria-label="LinkedIn de Santiago Palacio Vásquez" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.94 6.5a1.94 1.94 0 1 1 0-3.88 1.94 1.94 0 0 1 0 3.88ZM4.75 8.75h4.38V20H4.75V8.75Zm7.06 0h4.2v1.54h.06c.58-1.1 2-2.26 4.12-2.26 4.4 0 5.21 2.9 5.21 6.67V20h-4.38v-5.2c0-1.24-.02-2.83-1.73-2.83-1.73 0-2 1.35-2 2.74V20h-4.38V8.75Z"/></svg>
+                </a>
+                <a class="member__social-link" href="#" aria-label="GitHub de Santiago Palacio Vásquez" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C6.48 2 2 6.58 2 12.25c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.73-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05a9.2 9.2 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.81 0 .27.18.6.69.49A10.03 10.03 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="member">
+              <div class="member__photo">
+                <img
+                  src="./team/karen-sofia.png"
+                  alt="Karen Sofía Rodríguez Martínez"
+                  width="800"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="member__body">
+<h3 class="member__name">Karen Sofía Rodríguez Martínez</h3>
+              <p class="member__role">Data Engineer</p>
+</div>
+              <div class="member__social">
+                <a class="member__social-link" href="#" aria-label="LinkedIn de Karen Sofía Rodríguez Martínez" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.94 6.5a1.94 1.94 0 1 1 0-3.88 1.94 1.94 0 0 1 0 3.88ZM4.75 8.75h4.38V20H4.75V8.75Zm7.06 0h4.2v1.54h.06c.58-1.1 2-2.26 4.12-2.26 4.4 0 5.21 2.9 5.21 6.67V20h-4.38v-5.2c0-1.24-.02-2.83-1.73-2.83-1.73 0-2 1.35-2 2.74V20h-4.38V8.75Z"/></svg>
+                </a>
+                <a class="member__social-link" href="#" aria-label="GitHub de Karen Sofía Rodríguez Martínez" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C6.48 2 2 6.58 2 12.25c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.73-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05a9.2 9.2 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.81 0 .27.18.6.69.49A10.03 10.03 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="member">
+              <div class="member__photo">
+                <img
+                  src="./team/liliana.png"
+                  alt="Liliana Patricia Salamanca Rincon"
+                  width="800"
+                  height="800"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="member__body">
+                <h3 class="member__name">Liliana Patricia Salamanca Rincon</h3>
+              <p class="member__role">Cybersecurity Engineer</p>
+</div>
+              <div class="member__social">
+                <a class="member__social-link" href="#" aria-label="LinkedIn de Liliana Patricia Salamanca Rincon" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.94 6.5a1.94 1.94 0 1 1 0-3.88 1.94 1.94 0 0 1 0 3.88ZM4.75 8.75h4.38V20H4.75V8.75Zm7.06 0h4.2v1.54h.06c.58-1.1 2-2.26 4.12-2.26 4.4 0 5.21 2.9 5.21 6.67V20h-4.38v-5.2c0-1.24-.02-2.83-1.73-2.83-1.73 0-2 1.35-2 2.74V20h-4.38V8.75Z"/></svg>
+                </a>
+                <a class="member__social-link" href="#" aria-label="GitHub de Liliana Patricia Salamanca Rincon" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C6.48 2 2 6.58 2 12.25c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.73-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05a9.2 9.2 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.81 0 .27.18.6.69.49A10.03 10.03 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="member">
+              <div class="member__photo" aria-hidden="true"><span>JS</span></div>
+              <div class="member__body">
+<h3 class="member__name">Jhoan Esteban Soler Giraldo</h3>
+              <p class="member__role">Systems Engineer</p>
+</div>
+              <div class="member__social">
+                <a class="member__social-link" href="#" aria-label="LinkedIn de Jhoan Esteban Soler Giraldo" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.94 6.5a1.94 1.94 0 1 1 0-3.88 1.94 1.94 0 0 1 0 3.88ZM4.75 8.75h4.38V20H4.75V8.75Zm7.06 0h4.2v1.54h.06c.58-1.1 2-2.26 4.12-2.26 4.4 0 5.21 2.9 5.21 6.67V20h-4.38v-5.2c0-1.24-.02-2.83-1.73-2.83-1.73 0-2 1.35-2 2.74V20h-4.38V8.75Z"/></svg>
+                </a>
+                <a class="member__social-link" href="#" aria-label="GitHub de Jhoan Esteban Soler Giraldo" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C6.48 2 2 6.58 2 12.25c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.73-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.55-1.14-4.55-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05a9.2 9.2 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.81 0 .27.18.6.69.49A10.03 10.03 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+                </a>
+              </div>
+            </article>
+            </div>
+
+            <button class="carousel__btn carousel__btn--next" type="button" aria-label="Siguiente integrante" data-carousel-next>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+          </div>
+
+          <div class="carousel__dots" data-carousel-dots aria-label="Paginación del carrusel"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="site-footer__lead">Diseñado y fabricado por Team Kamui.</p>
+      <p class="site-footer__tagline">Construyendo desde Colombia para equipos de todo el mundo.</p>
+    </footer>
+
+    <script src="./main.js" defer></script>
+  </body>
+</html>
